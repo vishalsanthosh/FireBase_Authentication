@@ -14,7 +14,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
       appBar: AppBar(
         title: Text("Home Screen"),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.logout))
+          IconButton(onPressed: (){
+            Navigator.pop(context);
+          }, icon: Icon(Icons.logout))
         ],
       ),
     );
